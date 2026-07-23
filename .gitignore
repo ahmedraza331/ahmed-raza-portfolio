@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Environment files (contains secrets)
+.env
+.env.local
+.env.*.local
+
+# Vercel
+.vercel/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Build tools
+.vite-source-tags.js
+
+# Archive
+*.tar.gz
+*.tar.gz
+EXPORT_README.md
+.gitignore.export
+.vercel
