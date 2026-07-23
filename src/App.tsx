@@ -68,10 +68,19 @@ export default function App() {
         content="Ahmed Raza is a Junior Full Stack Engineer specializing in React, Node.js, Laravel, TypeScript, PHP and modern web applications."
       />
 
+  <link
+    rel="canonical"
+    href="https://ahmed-raza-portfolio-six.vercel.app/"
+  />
+
       <meta
         name="keywords"
         content="Ahmed Raza, Full Stack Engineer, React Developer, Node.js, Laravel, Portfolio, TypeScript"
       />
+<meta property="og:title" content="Ahmed Raza | Full Stack Engineer" />
+<meta property="og:description" content="Professional Full Stack Engineer Portfolio showcasing React, TypeScript, Node.js, Laravel, and modern web applications." />
+<meta property="og:url" content="https://ahmed-raza-portfolio-six.vercel.app/" />
+<meta property="og:image" content="https://ahmed-raza-portfolio-six.vercel.app/portrait.jpg" />
 
       <meta
         name="author"
