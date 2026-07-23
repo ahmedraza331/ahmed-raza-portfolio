@@ -1,0 +1,16 @@
+{
+  "name": "Ahmed Raza Portfolio",
+  "short_name": "Ahmed Portfolio",
+  "description": "Professional Full Stack Engineer Portfolio showcasing React, TypeScript, Node.js, Laravel, and modern web applications.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

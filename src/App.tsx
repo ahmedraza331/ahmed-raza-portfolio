@@ -81,6 +81,10 @@ export default function App() {
 <meta property="og:description" content="Professional Full Stack Engineer Portfolio showcasing React, TypeScript, Node.js, Laravel, and modern web applications." />
 <meta property="og:url" content="https://ahmed-raza-portfolio-six.vercel.app/" />
 <meta property="og:image" content="https://ahmed-raza-portfolio-six.vercel.app/portrait.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ahmed Raza | Full Stack Engineer" />
+<meta name="twitter:description" content="Professional Full Stack Engineer Portfolio showcasing React, TypeScript, Node.js, Laravel, and modern web applications." />
+<meta name="twitter:image" content="https://ahmed-raza-portfolio-six.vercel.app/portrait.jpg" />
 
       <meta
         name="author"

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ahmed-raza-portfolio-six.vercel.app/sitemap.xml
