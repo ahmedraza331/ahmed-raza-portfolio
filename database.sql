@@ -143,9 +143,9 @@ INSERT INTO public.project_cases (title, subtitle, overview, challenge, solution
   '[{"title":"Product Catalog","description":"Advanced product management with categories, filters, search and real-time inventory tracking"},{"title":"Smart Shopping Cart","description":"Persistent cart with real-time price calculation, discount codes and saved items"},{"title":"Secure Checkout","description":"Multi-step checkout with payment processing, address validation and order confirmation"},{"title":"Admin Dashboard","description":"Complete store management with analytics, inventory control and order processing"},{"title":"Analytics Engine","description":"Real-time sales analytics, user behavior tracking and conversion optimization"},{"title":"Multi-Currency","description":"Automatic currency conversion with region-based pricing and tax calculation"}]'::jsonb,
   '[{"step":1,"title":"Research & Discovery","description":"Analyzed market leaders, user expectations and technical requirements"},{"step":2,"title":"Information Architecture","description":"Designed user flows, navigation structure and data models"},{"step":3,"title":"Visual Design","description":"Created design system with components, typography and color palette"},{"step":4,"title":"Frontend Development","description":"Built responsive React components with state management and animations"},{"step":5,"title":"Backend & API","description":"Engineered Node.js API with authentication, caching and optimization"},{"step":6,"title":"Testing & Launch","description":"Comprehensive testing, performance optimization and production deployment"}]'::jsonb,
   '[{"value":"99.9%","label":"Uptime"},{"value":"1.8s","label":"Load Time"},{"value":"50K+","label":"Active Users"},{"value":"4.8★","label":"User Rating"}]'::jsonb,
-  '["#8B5CF6", "#3B82F6", "#1E293B", "#F8FAFC", "#10B981"]'::jsonb,
+  '["#C6A96B", "#3B82F6", "#1E293B", "#F8FAFC", "#10B981"]'::jsonb,
   '["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs", "JWT Auth"]'::jsonb,
-  'laptop', 1, '#8B5CF6', '#3B82F6', 1, 'https://github.com/ahmedraza', 'https://example.com'
+  'laptop', 1, '#C6A96B', '#3B82F6', 1, 'https://github.com/ahmedraza', 'https://example.com'
 ),
 (
   'Task Management Dashboard',
@@ -169,7 +169,7 @@ INSERT INTO public.project_cases (title, subtitle, overview, challenge, solution
   '[{"title":"Auth System","description":"JWT-based authentication with refresh tokens, OAuth2 and role management"},{"title":"Social Graph","description":"Follow/unfollow system with mutual connections and suggestion engine"},{"title":"Media Pipeline","description":"Image and video upload with compression, thumbnails and CDN delivery"},{"title":"Notification Engine","description":"Real-time push notifications with preferences and delivery tracking"},{"title":"Search & Filter","description":"Full-text search with advanced filtering, sorting and pagination"},{"title":"Rate Limiting","description":"Intelligent rate limiting with burst allowance and abuse prevention"}]'::jsonb,
   '[{"step":1,"title":"API Architecture","description":"Designed RESTful endpoints, versioning strategy and response formats"},{"step":2,"title":"Database Design","description":"Normalized schema with indexes, relationships and migration plans"},{"step":3,"title":"Core Development","description":"Built controllers, middleware, services and repository patterns"},{"step":4,"title":"Documentation","description":"OpenAPI spec with interactive docs and Postman collections"},{"step":5,"title":"Load Testing","description":"Stress tested with 10M+ requests to optimize bottlenecks"},{"step":6,"title":"Deployment","description":"Containerized deployment with auto-scaling and monitoring"}]'::jsonb,
   '[{"value":"10M+","label":"Requests/Day"},{"value":"45ms","label":"Avg Response"},{"value":"99.99%","label":"Uptime"},{"value":"100+","label":"Endpoints"}]'::jsonb,
-  '["#10B981", "#3B82F6", "#0F172A", "#ECFDF5", "#8B5CF6"]'::jsonb,
+  '["#10B981", "#3B82F6", "#0F172A", "#ECFDF5", "#C6A96B"]'::jsonb,
   '["PHP", "Laravel", "MySQL", "REST APIs", "JWT Auth", "Redis"]'::jsonb,
   'mobile', 3, '#10B981', '#3B82F6', 3, 'https://github.com/ahmedraza', ''
 ),
@@ -182,9 +182,9 @@ INSERT INTO public.project_cases (title, subtitle, overview, challenge, solution
   '[{"title":"Visual Editor","description":"Drag-and-drop WYSIWYG editor with live preview and instant updates"},{"title":"Premium Themes","description":"Curated collection of professional themes with full customization"},{"title":"One-Click Deploy","description":"Deploy to Vercel instantly with custom domain and SSL"},{"title":"Live Preview","description":"Real-time responsive preview across desktop, tablet and mobile"},{"title":"SEO Tools","description":"Built-in meta tags, Open Graph, sitemap and structured data"},{"title":"Analytics","description":"Visitor tracking with page views, referrals and geographic data"}]'::jsonb,
   '[{"step":1,"title":"Market Research","description":"Analyzed 200+ developer portfolios to identify patterns and gaps"},{"step":2,"title":"UX Design","description":"Designed intuitive editor flow with minimal learning curve"},{"step":3,"title":"Prototyping","description":"Built interactive prototypes for editor and preview experience"},{"step":4,"title":"Development","description":"React component system with theme engine and deployment pipeline"},{"step":5,"title":"Beta Testing","description":"500+ beta testers validated usability and deployment flow"},{"step":6,"title":"Launch","description":"Product Hunt launch with 1000+ upvotes and featured placement"}]'::jsonb,
   '[{"value":"5K+","label":"Portfolios Built"},{"value":"98","label":"Mobile Score"},{"value":"3min","label":"Avg Build Time"},{"value":"4.9★","label":"User Rating"}]'::jsonb,
-  '["#F59E0B", "#8B5CF6", "#1E293B", "#FFFBEB", "#10B981"]'::jsonb,
+  '["#F59E0B", "#C6A96B", "#1E293B", "#FFFBEB", "#10B981"]'::jsonb,
   '["React.js", "Tailwind CSS", "Firebase", "Vercel", "Framer Motion"]'::jsonb,
-  'tablet', 4, '#F59E0B', '#8B5CF6', 4, 'https://github.com/ahmedraza', 'https://example.com'
+  'tablet', 4, '#F59E0B', '#C6A96B', 4, 'https://github.com/ahmedraza', 'https://example.com'
 ),
 (
   'Real-time Chat Application',
@@ -195,9 +195,9 @@ INSERT INTO public.project_cases (title, subtitle, overview, challenge, solution
   '[{"title":"Private & Group Chat","description":"One-on-one and group conversations with admin controls and permissions"},{"title":"File Sharing","description":"Drag-and-drop file sharing with preview, compression and cloud storage"},{"title":"Reactions & Emojis","description":"Message reactions, custom emojis and expressive communication"},{"title":"Typing Indicators","description":"Real-time typing status with presence awareness and activity feeds"},{"title":"Read Receipts","description":"Message delivery and read confirmation with timestamp tracking"},{"title":"Voice Messages","description":"One-tap voice recording with waveform visualization and playback"}]'::jsonb,
   '[{"step":1,"title":"Technical Research","description":"Evaluated WebSocket libraries, protocols and scaling strategies"},{"step":2,"title":"System Architecture","description":"Designed message queue, presence system and offline sync"},{"step":3,"title":"UI/UX Design","description":"Created chat interface with animations and gesture interactions"},{"step":4,"title":"Core Development","description":"Built real-time engine with optimistic updates and queuing"},{"step":5,"title":"Load Testing","description":"Simulated 100K concurrent connections to validate performance"},{"step":6,"title":"Launch","description":"Phased rollout with monitoring, alerting and rapid response"}]'::jsonb,
   '[{"value":"<100ms","label":"Latency"},{"value":"1M+","label":"Messages/Day"},{"value":"99.9%","label":"Delivery Rate"},{"value":"25K+","label":"Active Users"}]'::jsonb,
-  '["#EF4444", "#8B5CF6", "#0F172A", "#FEF2F2", "#3B82F6"]'::jsonb,
+  '["#EF4444", "#C6A96B", "#0F172A", "#FEF2F2", "#3B82F6"]'::jsonb,
   '["Node.js", "Express.js", "MongoDB", "WebSocket", "JWT Auth", "Redis"]'::jsonb,
-  'mobile', 1, '#EF4444', '#8B5CF6', 5, 'https://github.com/ahmedraza', 'https://example.com'
+  'mobile', 1, '#EF4444', '#C6A96B', 5, 'https://github.com/ahmedraza', 'https://example.com'
 ),
 (
   'Blog CMS Platform',
@@ -208,9 +208,9 @@ INSERT INTO public.project_cases (title, subtitle, overview, challenge, solution
   '[{"title":"Markdown Editor","description":"Distraction-free writing with real-time preview and syntax highlighting"},{"title":"Media Library","description":"Centralized media management with automatic optimization and CDN"},{"title":"SEO Suite","description":"Built-in keyword analysis, meta optimization and content scoring"},{"title":"Analytics Dashboard","description":"Reader insights with engagement metrics and growth tracking"},{"title":"Multi-Author","description":"Team collaboration with roles, editorial workflows and review process"},{"title":"Scheduling","description":"Content calendar with automated publishing and social distribution"}]'::jsonb,
   '[{"step":1,"title":"Content Strategy","description":"Researched blogger needs, content workflows and publishing patterns"},{"step":2,"title":"UX Research","description":"Tested editor paradigms with 100+ writers for optimal experience"},{"step":3,"title":"Design System","description":"Built component library with editor, dashboard and reader views"},{"step":4,"title":"Development","description":"Next.js with ISR, markdown engine and plugin architecture"},{"step":5,"title":"Testing","description":"Cross-browser testing, accessibility audit and performance profiling"},{"step":6,"title":"Launch","description":"Migration tools, onboarding flow and documentation portal"}]'::jsonb,
   '[{"value":"2K+","label":"Articles Published"},{"value":"500K+","label":"Monthly Readers"},{"value":"95+","label":"Lighthouse Score"},{"value":"4.7★","label":"User Rating"}]'::jsonb,
-  '["#06B6D4", "#8B5CF6", "#0F172A", "#ECFEFF", "#F59E0B"]'::jsonb,
+  '["#06B6D4", "#C6A96B", "#0F172A", "#ECFEFF", "#F59E0B"]'::jsonb,
   '["Next.js", "TypeScript", "MySQL", "Vercel", "Tailwind CSS"]'::jsonb,
-  'laptop', 2, '#06B6D4', '#8B5CF6', 6, 'https://github.com/ahmedraza', 'https://example.com'
+  'laptop', 2, '#06B6D4', '#C6A96B', 6, 'https://github.com/ahmedraza', 'https://example.com'
 );
 
 
@@ -257,7 +257,7 @@ CREATE TABLE IF NOT EXISTS public.certificate_showcase (
 );
 
 INSERT INTO public.certificate_showcase (title, category, issuer, year, description, image_path, accent_color, verified, sort_order) VALUES
-('Frontend Development', 'Frontend', 'Coursera', '2024', 'Advanced certification in modern frontend development including responsive design, accessibility, and performance optimization.', '/certs/frontend-dev.png', '#8B5CF6', true, 1),
+('Frontend Development', 'Frontend', 'Coursera', '2024', 'Advanced certification in modern frontend development including responsive design, accessibility, and performance optimization.', '/certs/frontend-dev.png', '#C6A96B', true, 1),
 ('React', 'Frontend', 'Meta', '2024', 'Professional certification in React.js including hooks, state management, component architecture and testing.', '/certs/react.png', '#3B82F6', true, 2),
 ('Next.js', 'Frontend', 'Vercel', '2024', 'Certification in Next.js App Router, server components, ISR, SSR, SSG and production deployment strategies.', '/certs/nextjs.png', '#06B6D4', true, 3),
 ('Backend Development', 'Backend', 'Google', '2023', 'Comprehensive backend certification covering server architecture, API design, authentication and database management.', '/certs/backend-dev.png', '#10B981', true, 4),

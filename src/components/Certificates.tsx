@@ -166,7 +166,7 @@ export default function Certificates() {
           className="flex flex-wrap items-center justify-center gap-6 mt-8 mb-10"
         >
           {[
-            { value: String(certificates.length || 16), label: 'Certifications', color: '#8B5CF6' },
+            { value: String(certificates.length || 16), label: 'Certifications', color: '#C6A96B' },
             { value: String(new Set(certificates.map(c => c.category)).size || 5), label: 'Categories', color: '#3B82F6' },
             { value: '100%', label: 'Verified', color: '#10B981' },
           ].map(stat => (

@@ -40,7 +40,7 @@ export default function Contact() {
     { icon: Mail, label: 'Email', href: 'mailto:sheikhahmednasir04@gmail.com' },
   ];
 
-  const inputClass = "w-full bg-white/[0.03] border border-white/[0.08] rounded-xl px-4 py-3 text-white text-sm placeholder:text-white/25 focus:border-[#8B5CF6]/40 focus:bg-white/[0.05] transition-all duration-300 focus:shadow-[0_0_20px_rgba(139,92,246,0.08)]";
+  const inputClass = "w-full bg-white/[0.03] border border-white/[0.08] rounded-xl px-4 py-3 text-white text-sm placeholder:text-white/25 focus:border-[#C6A96B]/40 focus:bg-white/[0.05] transition-all duration-300 focus:shadow-[0_0_20px_rgba(198,169,107,0.08)]";
 
   return (
     <section id="contact" className="relative py-24 md:py-32">
@@ -73,7 +73,7 @@ export default function Contact() {
               <label className="block text-xs font-medium text-white/40 mb-2 tracking-wide uppercase">Message *</label>
               <textarea value={form.message} onChange={e => setForm(f => ({ ...f, message: e.target.value }))} placeholder="Tell me about your project..." rows={5} className={`${inputClass} resize-none`} required />
             </div>
-            <button type="submit" disabled={sending || !form.name || !form.email || !form.message} className="w-full py-3.5 rounded-xl bg-[#8B5CF6] hover:bg-[#7C3AED] disabled:opacity-40 disabled:cursor-not-allowed text-white font-semibold transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] flex items-center justify-center gap-2">
+            <button type="submit" disabled={sending || !form.name || !form.email || !form.message} className="w-full py-3.5 rounded-xl bg-[#C6A96B] hover:bg-[#7C3AED] disabled:opacity-40 disabled:cursor-not-allowed text-white font-semibold transition-all duration-300 hover:shadow-[0_0_30px_rgba(198,169,107,0.3)] flex items-center justify-center gap-2">
               {sending ? <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" /> : <Send size={16} />}
               {sending ? 'Sending...' : 'Send Message'}
             </button>
@@ -103,8 +103,8 @@ export default function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-3 rounded-xl hover:bg-white/[0.05] transition">
-                    <div className="w-10 h-10 rounded-xl glass flex items-center justify-center group-hover:border-[#8B5CF6]/20 transition-colors">
-                      <s.icon size={18} className="text-white/40 group-hover:text-[#8B5CF6] transition-colors" />
+                    <div className="w-10 h-10 rounded-xl glass flex items-center justify-center group-hover:border-[#C6A96B]/20 transition-colors">
+                      <s.icon size={18} className="text-white/40 group-hover:text-[#C6A96B] transition-colors" />
                     </div>
                     <span className="text-sm text-white/50 group-hover:text-white transition-colors">{s.label}</span>
                   </a>

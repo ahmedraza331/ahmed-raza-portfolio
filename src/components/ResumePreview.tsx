@@ -186,7 +186,7 @@ color:#4b5563;
 li::before{
 content:"•";
 margin-right:8px;
-color:#8B5CF6;
+color:#C6A96B;
 font-weight:bold;
 }
 
@@ -323,7 +323,7 @@ window.print();
                   <button
                     onClick={handleDownload}
                     disabled={downloading}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#8B5CF6] hover:bg-[#7C3AED] disabled:opacity-60 text-sm font-medium text-white transition-all duration-300"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#C6A96B] hover:bg-[#7C3AED] disabled:opacity-60 text-sm font-medium text-white transition-all duration-300"
                   >
                     {downloading ? (
                       <>

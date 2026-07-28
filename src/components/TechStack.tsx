@@ -10,7 +10,7 @@ interface TechItem {
 }
 
 const categoryColors: Record<string, string> = {
-  Frontend: 'from-[#8B5CF6] to-[#A78BFA]',
+  Frontend: 'from-[#C6A96B] to-[#A78BFA]',
   Backend: 'from-[#3B82F6] to-[#60A5FA]',
   Database: 'from-[#10B981] to-[#34D399]',
   Tools: 'from-[#F59E0B] to-[#FBBF24]',
@@ -111,12 +111,12 @@ export default function TechStack() {
                   y: -3,
                   scale: 1.03,
                 }}
-                className="glass rounded-xl p-4 text-center group cursor-default transition-all duration-300 hover:border-[#8B5CF6]/20"
+                className="glass rounded-xl p-4 text-center group cursor-default transition-all duration-300 hover:border-[#C6A96B]/20"
               >
                 <div
                   className={`w-1 h-1 mx-auto mb-2 rounded-full bg-gradient-to-r ${
                     categoryColors[item.category] ||
-                    'from-[#8B5CF6] to-[#3B82F6]'
+                    'from-[#C6A96B] to-[#3B82F6]'
                   }`}
                 />
 

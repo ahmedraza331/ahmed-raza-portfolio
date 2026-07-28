@@ -39,7 +39,7 @@ export default function NotFound() {
         >
           <a
             href="/"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#8B5CF6] hover:bg-[#7C3AED] text-sm font-medium text-white transition-colors"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#C6A96B] hover:bg-[#7C3AED] text-sm font-medium text-white transition-colors"
           >
             <Home size={16} /> Back Home
           </a>

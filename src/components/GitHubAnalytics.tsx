@@ -13,7 +13,7 @@ const langData = [
   { name: 'TypeScript', pct: 25, color: '#3178C6' },
   { name: 'PHP', pct: 20, color: '#4F5D95' },
   { name: 'CSS', pct: 10, color: '#563D7C' },
-  { name: 'Other', pct: 10, color: '#8B5CF6' },
+  { name: 'Other', pct: 10, color: '#C6A96B' },
 ];
 
 const stats = [

@@ -58,7 +58,7 @@ export default function DeveloperTerminal() {
       {/* Toggle button */}
       <button
         onClick={() => setOpen(true)}
-        className="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-xl bg-[#0E0E0E] border border-white/[0.08] flex items-center justify-center text-white/40 hover:text-white hover:border-white/[0.15] transition-all duration-300 hover:shadow-[0_0_20px_rgba(139,92,246,0.15)]"
+        className="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-xl bg-[#0E0E0E] border border-white/[0.08] flex items-center justify-center text-white/40 hover:text-white hover:border-white/[0.15] transition-all duration-300 hover:shadow-[0_0_20px_rgba(198,169,107,0.15)]"
         aria-label="Open terminal"
       >
         <TerminalIcon size={18} />
@@ -93,12 +93,12 @@ export default function DeveloperTerminal() {
               <div className="h-72 overflow-y-auto p-4 font-mono text-[12px] leading-5" style={{ scrollbarWidth: 'none' }}>
                 {lines.map((line, i) => (
                   <div key={i} className={line.type === 'input' ? 'text-emerald-400/80' : 'text-white/50'}>
-                    {line.type === 'input' && <span className="text-[#8B5CF6]/60 mr-1">❯</span>}
+                    {line.type === 'input' && <span className="text-[#C6A96B]/60 mr-1">❯</span>}
                     <pre className="whitespace-pre-wrap inline">{line.text}</pre>
                   </div>
                 ))}
                 <form onSubmit={handleSubmit} className="flex items-center mt-1">
-                  <span className="text-[#8B5CF6]/60 mr-1">❯</span>
+                  <span className="text-[#C6A96B]/60 mr-1">❯</span>
                   <input
                     type="text"
                     value={input}

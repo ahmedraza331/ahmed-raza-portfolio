@@ -50,15 +50,15 @@ export default function CurrentlyLearning() {
               >
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 rounded-lg bg-[#8B5CF6]/10 border border-[#8B5CF6]/20 flex items-center justify-center">
-                      <BookOpen size={14} className="text-[#8B5CF6]" />
+                    <div className="w-8 h-8 rounded-lg bg-[#C6A96B]/10 border border-[#C6A96B]/20 flex items-center justify-center">
+                      <BookOpen size={14} className="text-[#C6A96B]" />
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold text-white">{item.technology}</h4>
                       <span className="text-[10px] text-white/30 font-medium">{item.category}</span>
                     </div>
                   </div>
-                  <span className="text-xs font-semibold text-[#8B5CF6]">{item.progress}%</span>
+                  <span className="text-xs font-semibold text-[#C6A96B]">{item.progress}%</span>
                 </div>
 
                 {/* Progress bar */}
@@ -69,7 +69,7 @@ export default function CurrentlyLearning() {
                     viewport={{ once: true }}
                     transition={{ duration: 1.2, delay: i * 0.1 + 0.3, ease: [0.22, 1, 0.36, 1] as const }}
                     className="h-full rounded-full"
-                    style={{ background: `linear-gradient(90deg, #8B5CF6, #3B82F6)` }}
+                    style={{ background: `linear-gradient(90deg, #C6A96B, #3B82F6)` }}
                   />
                 </div>
 

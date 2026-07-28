@@ -99,7 +99,7 @@ export default function Footer() {
               Built with
               <Heart
                 size={8}
-                className="text-[#8B5CF6]/40"
+                className="text-[#C6A96B]/40"
               />
               by Ahmed Raza
             </span>

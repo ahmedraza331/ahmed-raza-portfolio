@@ -72,7 +72,7 @@ export default function AIAssistant() {
         onClick={() => setOpen(!open)}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-xl bg-[#8B5CF6] flex items-center justify-center text-white shadow-[0_0_30px_rgba(139,92,246,0.3)] hover:shadow-[0_0_40px_rgba(139,92,246,0.4)] transition-shadow duration-300"
+        className="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-xl bg-[#C6A96B] flex items-center justify-center text-white shadow-[0_0_30px_rgba(198,169,107,0.3)] hover:shadow-[0_0_40px_rgba(198,169,107,0.4)] transition-shadow duration-300"
         aria-label="Ask Ahmed AI"
       >
         {open ? <X size={18} /> : <Sparkles size={18} />}
@@ -89,8 +89,8 @@ export default function AIAssistant() {
           >
             {/* Header */}
             <div className="px-4 py-3 border-b border-white/[0.06] flex items-center gap-2.5">
-              <div className="w-7 h-7 rounded-lg bg-[#8B5CF6]/15 border border-[#8B5CF6]/20 flex items-center justify-center">
-                <Sparkles size={13} className="text-[#8B5CF6]" />
+              <div className="w-7 h-7 rounded-lg bg-[#C6A96B]/15 border border-[#C6A96B]/20 flex items-center justify-center">
+                <Sparkles size={13} className="text-[#C6A96B]" />
               </div>
               <div>
                 <h4 className="text-sm font-semibold text-white">Ask Ahmed</h4>
@@ -103,14 +103,14 @@ export default function AIAssistant() {
               {messages.map((msg, i) => (
                 <div key={i} className={`flex gap-2 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                   {msg.role === 'assistant' && (
-                    <div className="w-6 h-6 rounded-lg bg-[#8B5CF6]/10 flex items-center justify-center shrink-0 mt-0.5">
-                      <Sparkles size={10} className="text-[#8B5CF6]/60" />
+                    <div className="w-6 h-6 rounded-lg bg-[#C6A96B]/10 flex items-center justify-center shrink-0 mt-0.5">
+                      <Sparkles size={10} className="text-[#C6A96B]/60" />
                     </div>
                   )}
                   <div
                     className={`max-w-[80%] px-3 py-2 rounded-xl text-[12px] leading-relaxed ${
                       msg.role === 'user'
-                        ? 'bg-[#8B5CF6]/20 text-white/80'
+                        ? 'bg-[#C6A96B]/20 text-white/80'
                         : 'bg-white/[0.04] text-white/55'
                     }`}
                   >
@@ -120,8 +120,8 @@ export default function AIAssistant() {
               ))}
               {typing && (
                 <div className="flex gap-2">
-                  <div className="w-6 h-6 rounded-lg bg-[#8B5CF6]/10 flex items-center justify-center shrink-0">
-                    <Sparkles size={10} className="text-[#8B5CF6]/60" />
+                  <div className="w-6 h-6 rounded-lg bg-[#C6A96B]/10 flex items-center justify-center shrink-0">
+                    <Sparkles size={10} className="text-[#C6A96B]/60" />
                   </div>
                   <div className="px-3 py-2 rounded-xl bg-white/[0.04]">
                     <div className="flex gap-1">
@@ -163,7 +163,7 @@ export default function AIAssistant() {
               <button
                 type="submit"
                 disabled={!input.trim()}
-                className="p-1.5 rounded-lg bg-[#8B5CF6] text-white disabled:opacity-30 transition-opacity"
+                className="p-1.5 rounded-lg bg-[#C6A96B] text-white disabled:opacity-30 transition-opacity"
               >
                 <Send size={13} />
               </button>

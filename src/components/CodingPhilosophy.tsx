@@ -30,7 +30,7 @@ export default function CodingPhilosophy() {
               >
                 <span className="text-lg shrink-0">{p.icon}</span>
                 <span className="text-sm text-white/60 group-hover:text-white/80 transition-colors font-light">{p.text}</span>
-                <div className="ml-auto w-1.5 h-1.5 rounded-full bg-[#8B5CF6]/30 group-hover:bg-[#8B5CF6] transition-colors duration-300 shrink-0" />
+                <div className="ml-auto w-1.5 h-1.5 rounded-full bg-[#C6A96B]/30 group-hover:bg-[#C6A96B] transition-colors duration-300 shrink-0" />
               </motion.div>
             ))}
           </div>

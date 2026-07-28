@@ -47,7 +47,7 @@ export default function App() {
         if (idx === konamiCode.length) {
           idx = 0;
           const flash = document.createElement('div');
-          flash.style.cssText = 'position:fixed;inset:0;z-index:99999;background:linear-gradient(135deg,#8B5CF6,#3B82F6);opacity:0.3;pointer-events:none;transition:opacity 1s';
+          flash.style.cssText = 'position:fixed;inset:0;z-index:99999;background:linear-gradient(135deg,#C6A96B,#3B82F6);opacity:0.3;pointer-events:none;transition:opacity 1s';
           document.body.appendChild(flash);
           setTimeout(() => { flash.style.opacity = '0'; }, 100);
           setTimeout(() => { flash.remove(); }, 1200);

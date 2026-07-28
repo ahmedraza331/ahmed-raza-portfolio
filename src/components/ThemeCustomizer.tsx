@@ -11,7 +11,7 @@ interface ThemeSettings {
 }
 
 const defaults: ThemeSettings = {
-  accentColor: '#8B5CF6',
+  accentColor: '#C6A96B',
   glassIntensity: 'premium',
   animationSpeed: 'normal',
   cursorStyle: 'custom',
@@ -19,7 +19,7 @@ const defaults: ThemeSettings = {
 };
 
 const accentColors = [
-  { name: 'Purple', value: '#8B5CF6' },
+  { name: '#C6A96B', value: '#C6A96B' },
   { name: 'Blue', value: '#3B82F6' },
   { name: 'Cyan', value: '#06B6D4' },
   { name: 'Emerald', value: '#10B981' },
