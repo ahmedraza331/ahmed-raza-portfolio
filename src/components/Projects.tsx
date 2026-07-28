@@ -77,8 +77,8 @@ function ProjectCaseStudy({ project, screenshots, index, onWatchDemo }: { projec
       <div className="relative min-h-screen flex items-center overflow-hidden py-20">
         {/* Background gradient accent */}
         <div
-          className="absolute top-0 right-0 w-1/2 h-full opacity-[0.04] pointer-events-none"
-          style={{ background: `linear-gradient(135deg, ${project.gradient_from}, ${project.gradient_to})` }}
+          className="absolute top-0 right-0 w-1/2 h-full opacity-[0.08] pointer-events-none backdrop-blur-2xl"
+          style={{ background: `linear-gradient(135deg,#6E6E6E,#C6A96B)`}}
         />
 
         <div className="max-w-7xl mx-auto px-4 md:px-6 w-full">
@@ -93,9 +93,9 @@ function ProjectCaseStudy({ project, screenshots, index, onWatchDemo }: { projec
                 className="mb-8"
               >
                 <span className="text-8xl md:text-9xl font-black text-white/[0.03] absolute -top-8 left-1/2 -translate-x-1/2 select-none">{num}</span>
-                <span className="relative text-xs font-semibold tracking-[0.3em] uppercase" style={{ color: project.gradient_from }}>Case Study {num}</span>
-                <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-3 tracking-tight">{project.title}</h3>
-                <p className="text-lg md:text-xl text-white/45 mt-2 font-light">{project.subtitle}</p>
+                <span className="relative text-xs font-semibold tracking-[0.3em] uppercase" style={{ color: '#C6A96B' }}>Case Study {num}</span>
+                <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-3 tracking-tight leading-tight">{project.title}</h3>
+                <p className="text-lg md:text-xl text-[#C8C8C8] mt-3 font-light">{project.subtitle}</p>
               </motion.div>
 
               <div className="relative w-full max-w-2xl mx-auto mb-8">
@@ -114,7 +114,7 @@ function ProjectCaseStudy({ project, screenshots, index, onWatchDemo }: { projec
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.4 }}
-                className="text-base md:text-lg text-white/40 max-w-xl font-light leading-relaxed"
+                className="text-base md:text-lg text-[#BEBEBE] max-w-xl font-light leading-8"
               >
                 {project.overview}
               </motion.p>
@@ -143,19 +143,19 @@ function ProjectCaseStudy({ project, screenshots, index, onWatchDemo }: { projec
                   transition={{ duration: 0.7 }}
                 >
                   <span className="text-8xl md:text-9xl font-black text-white/[0.03] absolute -top-8 select-none">{num}</span>
-                  <span className="relative text-xs font-semibold tracking-[0.3em] uppercase" style={{ color: project.gradient_from }}>Case Study {num}</span>
-                  <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-3 tracking-tight leading-[1.05]">{project.title}</h3>
-                  <p className="text-lg md:text-xl text-white/45 mt-2 font-light">{project.subtitle}</p>
-                  <p className="text-base text-white/35 mt-4 font-light leading-relaxed max-w-lg">{project.overview}</p>
+                  <span className="relative text-xs font-semibold tracking-[0.3em] uppercase" style={{ color:'#C6A96B' }}>Case Study {num}</span>
+                  <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-3 tracking-tight leading-tight">{project.title}</h3>
+                  <p className="text-lg md:text-xl text-[#C8C8C8] mt-3 font-light">{project.subtitle}</p>
+                  <p className="text-base text-[#BEBEBE] mt-4 font-light leading-8 max-w-lg">{project.overview}</p>
 
                   <div className="flex items-center gap-3 mt-6">
                     {project.github_url && (
-                      <a href={project.github_url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl glass text-sm font-medium text-white/60 hover:text-white hover:bg-white/[0.08] transition-all duration-300">
+                      <a href={project.github_url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl glass text-sm font-medium text-[#CFCFCF] hover:text-[#F8E7B5] hover:bg-[#C6A96B]/10 border border-[#C6A96B]/20 transition-all duration-300">
                         <Github size={16} /> Source Code
                       </a>
                     )}
                     {project.live_url && (
-                      <a href={project.live_url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium text-white transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.2)]" style={{ background: `linear-gradient(135deg, ${project.gradient_from}, ${project.gradient_to})` }}>
+                      <a href={project.live_url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium text-white transition-all duration-300 hover:shadow-[0_15px_40px_rgba(198,169,107,0.25)]" style={{background:'linear-gradient(135deg,#6E6E6E,#C6A96B)'}}>
                         <ExternalLink size={16} /> Live Demo
                       </a>
                     )}
@@ -216,7 +216,7 @@ function ProjectCaseStudy({ project, screenshots, index, onWatchDemo }: { projec
             transition={{ duration: 0.6 }}
             className="mb-10"
           >
-            <span className="text-xs font-semibold tracking-[0.3em] uppercase" style={{ color: project.gradient_from }}>Features</span>
+            <span className="text-xs font-semibold tracking-[0.3em] uppercase" style={{ color: '#C6A96B' }}>Features</span>
             <h4 className="text-2xl md:text-3xl font-bold text-white mt-2">Key Capabilities</h4>
           </motion.div>
 
@@ -258,7 +258,7 @@ function ProjectCaseStudy({ project, screenshots, index, onWatchDemo }: { projec
 
           <div className="relative">
             {/* Connecting line */}
-            <div className="absolute top-6 left-6 right-6 h-[2px] hidden md:block" style={{ background: `linear-gradient(90deg, ${project.gradient_from}30, ${project.gradient_to}30)` }} />
+            <div className="absolute top-6 left-6 right-6 h-[2px] hidden md:block" style={{ background: `linear-gradient(90deg, #4E4E4E30, #C6A96B30)` }} />
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               {project.process_steps.map((step, i) => (
@@ -270,11 +270,11 @@ function ProjectCaseStudy({ project, screenshots, index, onWatchDemo }: { projec
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="relative text-center group"
                 >
-                  <div className="relative z-10 w-12 h-12 rounded-full mx-auto mb-3 flex items-center justify-center glass group-hover:border-white/[0.15] transition-all duration-300" style={{ boxShadow: i === 0 ? `0 0 20px ${project.gradient_from}20` : 'none' }}>
-                    <span className="text-xs font-bold" style={{ color: project.gradient_from }}>{String(step.step).padStart(2, '0')}</span>
+                  <div className="relative z-10 w-12 h-12 rounded-full mx-auto mb-3 flex items-center justify-center group-hover:border-[#C6A96B]/40 transition-all duration-300" style={{ boxShadow:i===0 ?'0 0 30px rgba(198,169,107,.25)':'none' }}>
+                    <span className="text-xs font-bold" style={{ color:'#C6A96B' }}>{String(step.step).padStart(2, '0')}</span>
                   </div>
-                  <h5 className="text-xs font-semibold text-white/70 mb-1">{step.title}</h5>
-                  <p className="text-[10px] text-white/30 leading-relaxed hidden lg:block">{step.description}</p>
+                  <h5 className="text-xs font-semibold text-[#EAEAEA] mb-1">{step.title}</h5>
+                  <p className="text-[10px] text-[#9F9F9F] leading-relaxed hidden lg:block">{step.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -292,17 +292,17 @@ function ProjectCaseStudy({ project, screenshots, index, onWatchDemo }: { projec
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.6 }}
-              className="glass rounded-2xl p-6"
+              className="glass rounded-2xl p-6 border border-[#C6A96B]/15 hover:border-[#C6A96B]/35 transition-all duration-500"
             >
               <div className="flex items-center gap-2 mb-4">
-                <Code2 size={16} style={{ color: project.gradient_from }} />
-                <h5 className="text-sm font-semibold text-white/60 tracking-wide uppercase">Development Stack</h5>
+                <Code2 size={16} style={{ color:'#C6A96B' }} />
+                <h5 className="text-sm font-semibold text-[#CFCFCF] tracking-wide uppercase">Development Stack</h5>
               </div>
               <div className="flex flex-wrap gap-2">
                 {project.tech_list.map((tech) => (
                   <span
                     key={tech}
-                    className="px-3 py-1.5 text-xs font-medium rounded-lg bg-white/[0.04] text-white/50 border border-white/[0.06] hover:border-white/[0.12] hover:text-white/70 transition-all duration-300"
+                    className="px-3 py-1.5 text-xs font-medium rounded-lg bg-[#1E1E1E] text-white/50 border border-[#C6A96B]/15 hover:border-[#C6A96B]/40 hover:text-[#F8E7B5] transition-all duration-300"
                   >
                     {tech}
                   </span>
@@ -316,17 +316,17 @@ function ProjectCaseStudy({ project, screenshots, index, onWatchDemo }: { projec
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="glass rounded-2xl p-6"
+              className="glass rounded-2xl p-6 border border-[#C6A96B]/15 hover:border-[#C6A96B]/35 transition-all duration-500"
             >
               <div className="flex items-center gap-2 mb-4">
-                <BarChart3 size={16} style={{ color: project.gradient_from }} />
-                <h5 className="text-sm font-semibold text-white/60 tracking-wide uppercase">Results</h5>
+                <BarChart3 size={16} style={{ color:'#C6A96B' }} />
+                <h5 className="text-sm font-semibold text-[#CFCFCF] tracking-wide uppercase">Results</h5>
               </div>
               <div className="grid grid-cols-2 gap-3">
                 {project.results.map((result, i) => (
                   <div key={i} className="text-center p-2">
                     <div className="text-xl md:text-2xl font-bold" style={{ color: project.gradient_from }}>{result.value}</div>
-                    <div className="text-[10px] text-white/30 font-medium tracking-wider uppercase mt-0.5">{result.label}</div>
+                    <div className="text-[10px] bg-[#1E1E1E] font-medium tracking-wider uppercase mt-0.5">{result.label}</div>
                   </div>
                 ))}
               </div>
@@ -338,24 +338,24 @@ function ProjectCaseStudy({ project, screenshots, index, onWatchDemo }: { projec
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="glass rounded-2xl p-6"
+              className="glass rounded-2xl p-6 border border-[#C6A96B]/15 hover:border-[#C6A96B]/35 transition-all duration-500"
             >
               <div className="flex items-center gap-2 mb-4">
-                <Palette size={16} style={{ color: project.gradient_from }} />
-                <h5 className="text-sm font-semibold text-white/60 tracking-wide uppercase">Visual Identity</h5>
+                <Palette size={16} style={{ color:'#C6A96B' }} />
+                <h5 className="text-sm font-semibold text-[#CFCFCF] tracking-wide uppercase">Visual Identity</h5>
               </div>
               <div className="flex gap-2 mb-3">
                 {project.color_palette.map((color) => (
                   <div key={color} className="group/swatch relative">
                     <div
-                      className="w-10 h-10 rounded-xl border border-white/[0.08] cursor-pointer transition-transform duration-300 hover:scale-110"
-                      style={{ backgroundColor: color }}
+                      className="w-10 h-10 rounded-xl border border-[#C6A96B]/15 cursor-pointer transition-transform duration-300 hover:scale-110"
+                      style={{ backgroundColor: color, border: '1px solid rgba(198,169,107,0.3)' }}
                     />
-                    <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[8px] text-white/20 opacity-0 group-hover/swatch:opacity-100 transition-opacity whitespace-nowrap">{color}</span>
+                    <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[8px] text-[#8F8F8F] opacity-0 group-hover/swatch:opacity-100 transition-opacity whitespace-nowrap">{color}</span>
                   </div>
                 ))}
               </div>
-              <p className="text-[10px] text-white/25 mt-6">Hover swatches for hex values</p>
+              <p className="text-[10px] text-[#9E9E9E] mt-6">Hover swatches for hex values</p>
             </motion.div>
           </div>
 
@@ -368,18 +368,18 @@ function ProjectCaseStudy({ project, screenshots, index, onWatchDemo }: { projec
             className="flex items-center justify-center gap-4 mt-10"
           >
             {project.github_url && (
-              <a href={project.github_url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass text-sm font-medium text-white/60 hover:text-white hover:bg-white/[0.08] transition-all duration-300">
+              <a href={project.github_url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass text-sm font-medium text-[#D6D6D6] hover:text-[#F8E7B5] hover:bg-[#C6A96B]/10 transition-all duration-300">
                 <Github size={16} /> View Source
               </a>
             )}
             {project.live_url && (
-              <a href={project.live_url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium text-white transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.2)]" style={{ background: `linear-gradient(135deg, ${project.gradient_from}, ${project.gradient_to})` }}>
+              <a href={project.live_url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium text-white transition-all duration-300 hover:shadow-[0_20px_45px_rgba(198,169,107,0.28)]" style={{background:'linear-gradient(135deg,#6E6E6E,#C6A96B)'}}>
                 Explore Live <ArrowRight size={14} />
               </a>
             )}
             <button
               onClick={() => onWatchDemo(project)}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass text-sm font-medium text-white/60 hover:text-white hover:bg-white/[0.08] transition-all duration-300"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass text-sm font-medium text-[#D6D6D6] hover:text-[#F8E7B5] hover:bg-[#C6A96B]/10 transition-all duration-300"
             >
               <Play size={14} /> Watch Demo
             </button>
@@ -389,7 +389,7 @@ function ProjectCaseStudy({ project, screenshots, index, onWatchDemo }: { projec
 
       {/* Section divider */}
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="h-[1px] bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
+        <div className="h-[1px] bg-gradient-to-r from-transparent via-[#C6A96B]/30 to-transparent" />
       </div>
     </div>
   );
@@ -430,7 +430,7 @@ function ProjectNav({ projects, activeIndex }: { projects: ProjectCase[]; active
               }}
               className="group flex items-center gap-3 transition-all duration-300"
             >
-              <span className={`text-[10px] font-medium transition-all duration-300 ${activeIndex === i ? 'text-white/70 opacity-100' : 'text-white/30 opacity-0 group-hover:opacity-100'}`}>
+              <span className={`text-[10px] font-medium transition-all duration-300 ${activeIndex === i ? 'text-[#F8E7B5] opacity-100' : 'text-[#8F8F8F] opacity-0 group-hover:opacity-100'}`}>
                 {project.title.split(' ')[0]}
               </span>
               <div
@@ -438,8 +438,8 @@ function ProjectNav({ projects, activeIndex }: { projects: ProjectCase[]; active
                   activeIndex === i ? 'w-2.5 h-2.5' : 'w-1.5 h-1.5 group-hover:w-2 group-hover:h-2'
                 }`}
                 style={{
-                  backgroundColor: activeIndex === i ? project.gradient_from : 'rgba(255,255,255,0.15)',
-                  boxShadow: activeIndex === i ? `0 0 10px ${project.gradient_from}40` : 'none',
+                  backgroundColor: activeIndex === i ? '#C6A96B' : 'rgba(255,255,255,.15)',
+                  boxShadow:activeIndex===i ?'0 0 20px rgba(198,169,107,.35)' :'none',
                 }}
               />
             </button>

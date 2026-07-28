@@ -8,9 +8,9 @@ export default function Loader() {
       transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
     >
       <div className="relative flex flex-col items-center">
-        <div className="absolute w-32 h-32 rounded-full border border-[#8B5CF6]/20 animate-spin-slow" />
+        <div className="absolute w-32 h-32 rounded-full border border-[#C6A96B]/20 animate-spin-slow" />
         <div
-          className="absolute w-24 h-24 rounded-full border border-[#3B82F6]/20 animate-spin-slow"
+         className="absolute w-24 h-24 rounded-full border border-[#E5C07B]/20 animate-spin-slow"
           style={{ animationDirection: 'reverse', animationDuration: '6s' }}
         />
         <motion.div
@@ -22,7 +22,7 @@ export default function Loader() {
           <span className="text-5xl font-bold gradient-text">AR</span>
         </motion.div>
         <motion.div
-          className="mt-8 h-[2px] bg-gradient-to-r from-transparent via-[#8B5CF6] to-transparent rounded-full"
+          className="mt-8 h-[2px] bg-gradient-to-r from-transparent via-[#C6A96B] to-transparent rounded-full"
           initial={{ width: 0 }}
           animate={{ width: 120 }}
           transition={{ duration: 2, ease: [0.22, 1, 0.36, 1] }}

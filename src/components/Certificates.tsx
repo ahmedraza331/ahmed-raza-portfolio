@@ -186,7 +186,7 @@ export default function Certificates() {
               onClick={() => setActiveFilter(cat)}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                 activeFilter === cat
-                  ? 'bg-[#8B5CF6] text-white'
+                  ? 'bg-[#C6A96B] text-white'
                   : 'bg-white/[0.04] text-white/40 hover:text-white/60 hover:bg-white/[0.06] border border-white/[0.06]'
               }`}
             >

@@ -29,7 +29,7 @@ export default function About() {
           >
             <div className="space-y-5 text-white/65 leading-relaxed text-base md:text-lg font-light">
               <p>
-                I am a <span className="text-white font-medium">Junior Full Stack Engineer</span> passionate about building modern, scalable and high-performance web applications. Since 2022 I have been developing projects using <span className="text-[#8B5CF6] font-medium">React</span>, <span className="text-[#3B82F6] font-medium">Next.js</span>, <span className="text-[#8B5CF6] font-medium">PHP</span>, <span className="text-[#3B82F6] font-medium">Laravel</span>, <span className="text-[#8B5CF6] font-medium">Node.js</span>, <span className="text-[#3B82F6] font-medium">Express.js</span>, <span className="text-[#8B5CF6] font-medium">MySQL</span> and <span className="text-[#3B82F6] font-medium">MongoDB</span>.
+                I am a <span className="text-white font-medium">Junior Full Stack Engineer</span> passionate about building modern, scalable and high-performance web applications. Since 2022 I have been developing projects using <span className="text-[#C6A96B] font-medium">React</span>, <span className="text-[#E5C07B] font-medium">Next.js</span>, <span className="text-[#C6A96B] font-medium">PHP</span>, <span className="text-[#E5C07B] font-medium">Laravel</span>, <span className="text-[#C6A96B] font-medium">Node.js</span>, <span className="text-[#E5C07B] font-medium">Express.js</span>, <span className="text-[#C6A96B] font-medium">MySQL</span> and <span className="text-[#E5C07B] font-medium">MongoDB</span>.
               </p>
               <p>
                 My goal is to create beautiful user experiences backed by clean architecture, secure backend systems and optimized performance. Every line of code I write is purposeful, every interface I design is intuitive, and every system I build is scalable.
@@ -54,9 +54,9 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 whileHover={{ y: -4, scale: 1.02 }}
-                className="glass rounded-2xl p-5 md:p-6 text-center group transition-all duration-300 hover:border-[#8B5CF6]/20"
+                className="glass rounded-2xl p-5 md:p-6 text-center group transition-all duration-300 hover:border-[#C6A96B]/20"
               >
-                <stat.icon className="mx-auto mb-3 text-[#8B5CF6] group-hover:text-[#3B82F6] transition-colors duration-300" size={24} />
+                <stat.icon className="mx-auto mb-3 text-[#C6A96B] group-hover:text-[#E5C07B] transition-colors duration-300" size={24} />
                 <div className="text-2xl md:text-3xl font-bold gradient-text mb-1">{stat.value}</div>
                 <div className="text-xs text-white/40 font-medium tracking-wide uppercase">{stat.label}</div>
               </motion.div>

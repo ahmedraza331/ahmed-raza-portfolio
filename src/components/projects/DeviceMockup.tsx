@@ -39,7 +39,7 @@ export default function DeviceMockup({ type, gradientFrom, gradientTo, screensho
     >
       {/* Ambient glow */}
       <div
-        className="absolute -inset-16 rounded-3xl blur-3xl opacity-15 pointer-events-none"
+        className="absolute -inset-16 rounded-3xl backdrop-blur-2xl opacity-15 pointer-events-none"
         style={{ background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})` }}
       />
 

@@ -23,57 +23,110 @@ export default function TechStack() {
 
   useEffect(() => {
     fetch('/api/tech-items')
-      .then(res => res.json())
-      .then(data => { setItems(data); setLoading(false); })
+      .then((res) => res.json())
+      .then((data) => {
+        setItems(data);
+        setLoading(false);
+      })
       .catch(() => setLoading(false));
   }, []);
 
-  const categories = ['All', ...Array.from(new Set(items.map(i => i.category)))];
-  const filtered = activeCategory === 'All' ? items : items.filter(i => i.category === activeCategory);
+  const categories = [
+    'All',
+    ...Array.from(new Set(items.map((item) => item.category))),
+  ];
+
+  const filtered =
+    activeCategory === 'All'
+      ? items
+      : items.filter((item) => item.category === activeCategory);
 
   return (
-    <section id="techstack" className="relative py-24 md:py-32">
+    <section
+      id="techstack"
+      className="relative py-24 md:py-32"
+    >
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <SectionHeading label="Tech Stack" title="Technologies &" titleAccent="Tools" description="The technologies and tools I use to bring ideas to life." />
+        <SectionHeading
+          label="Tech Stack"
+          title="Technologies &"
+          titleAccent="Tools"
+          description="The technologies and tools I use to bring ideas to life."
+        />
+
+        {/* Category Filters */}
         <div className="mt-10 flex flex-wrap justify-center gap-2 mb-10">
-          {categories.map(cat => (
+          {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
               className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
                 activeCategory === cat
-                  ? 'bg-[#8B5CF6] text-white shadow-[0_0_20px_rgba(139,92,246,0.3)]'
-                  : 'glass text-white/50 hover:text-white hover:bg-white/[0.08]'
+               ? 'bg-[#C6A96B] text-black shadow-[0_0_20px_rgba(198,169,107,0.35)]'
+               : 'glass text-white/50 hover:text-[#F8E7B5] hover:bg-[#C6A96B]/10 border border-[#343434]'
               }`}
             >
               {cat}
             </button>
           ))}
         </div>
+                {/* Tech Stack Grid */}
         {loading ? (
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
             {Array.from({ length: 15 }).map((_, i) => (
-              <div key={i} className="glass rounded-xl p-4 animate-pulse">
+              <div
+                key={i}
+                className="glass rounded-xl p-4 animate-pulse"
+              >
                 <div className="h-4 w-20 rounded bg-white/[0.03]" />
               </div>
             ))}
           </div>
         ) : (
-          <motion.div layout className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+          <motion.div
+            layout
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3"
+          >
             {filtered.map((item, i) => (
               <motion.div
                 key={item.id}
                 layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.3, delay: i * 0.03 }}
-                whileHover={{ y: -3, scale: 1.03 }}
+                initial={{
+                  opacity: 0,
+                  scale: 0.9,
+                }}
+                animate={{
+                  opacity: 1,
+                  scale: 1,
+                }}
+                exit={{
+                  opacity: 0,
+                  scale: 0.9,
+                }}
+                transition={{
+                  duration: 0.3,
+                  delay: i * 0.03,
+                }}
+                whileHover={{
+                  y: -3,
+                  scale: 1.03,
+                }}
                 className="glass rounded-xl p-4 text-center group cursor-default transition-all duration-300 hover:border-[#8B5CF6]/20"
               >
-                <div className={`w-1 h-1 mx-auto mb-2 rounded-full bg-gradient-to-r ${categoryColors[item.category] || 'from-[#8B5CF6] to-[#3B82F6]'}`} />
-                <span className="text-sm font-medium text-white/60 group-hover:text-white transition-colors duration-300">{item.name}</span>
-                <div className="text-[10px] text-white/30 mt-1">{item.category}</div>
+                <div
+                  className={`w-1 h-1 mx-auto mb-2 rounded-full bg-gradient-to-r ${
+                    categoryColors[item.category] ||
+                    'from-[#8B5CF6] to-[#3B82F6]'
+                  }`}
+                />
+
+                <span className="text-sm font-medium text-white/60 group-hover:text-white transition-colors duration-300">
+                  {item.name}
+                </span>
+
+                <div className="text-[10px] text-white/30 mt-1">
+                  {item.category}
+                </div>
               </motion.div>
             ))}
           </motion.div>
